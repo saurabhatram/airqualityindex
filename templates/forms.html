@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Air Quality Index Prediction</h1>
+
+<form action="{{ url_for('predict')}}" method="POST">
+  <label for="T">Average Temperature (°C):</label><br>
+  <input type="text" id="Temperature" name="Temperature"><br>
+  
+<label for="TM"> Maximum temperature (°C):</label><br>
+  <input type="text" id="MaximumTemperature" name="MaximumTemperature"><br>
+
+
+<label for="Tm">Minimum temperature (°C):</label><br>
+  <input type="text" id="MinimumTemperature (°C)" name="MinimumTemperature (°C)"><br>
+
+
+<label for="SLP"> Atmospheric pressure at sea level (hPa):</label><br>
+  <input type="text" id="AtmosphericPressure" name="AtmosphericPressure"><br>
+
+
+<label for="H ">Average relative humidity (%) :</label><br>
+  <input type="text" id="AverageRelativeHumidity" name="AverageRelativeHumidity"><br>
+
+
+<label for="VV"> Average visibility (Km):</label><br>
+  <input type="text" id="AverageVisibility" name="AverageVisibility"><br>
+
+<label for="V">Average wind speed (Km/h):</label><br>
+  <input type="text" id="AverageWindSpeed" name="AverageWindSpeed"><br>
+
+
+<label for="VM">Maximum sustained wind speed (Km/h):</label><br>
+  <input type="text" id="MaximumSustainedWindSpeed" name="MaximumSustainedWindSpeed"><br>
+
+		<p>Click the Predict Button</p>
+		<input type="submit" class="btn-info" value="predict">
+</form>
+
+
+</body>
+</html>
